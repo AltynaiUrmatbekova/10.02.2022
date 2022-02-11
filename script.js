@@ -21,3 +21,27 @@ let example5Div = document.querySelector('#example5');
 example5Div.addEventListener('click', function() {
     alert(example5Div.textContent.length);
 })
+
+let num = 0;
+
+let h1 = document.querySelector('h1');
+let resetButton = document.querySelector('#reset');
+resetButton.addEventListener('click', function() {
+    num = 0;
+    h1.textContent = num;
+})
+
+let increaseButton = document.querySelector('#increase');
+increaseButton.addEventListener('click', function() {
+num = num + 1;
+h1.textContent = num;
+// num += 1;
+// num++;
+})
+
+let decreaseButton = document.querySelector('#decrease');
+decreaseButton.addEventListener('click', function() {
+    num = num - 1;
+    h1.textContent = num;
+}
+)
